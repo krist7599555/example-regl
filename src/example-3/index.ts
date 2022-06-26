@@ -19,14 +19,20 @@ const drawCameta = regl({
       vposition = position;
       gl_Position = vec4(position, 0, 1);
     }`,
+
   frag: glsl`
     precision mediump float;
     varying vec2 vposition;
     uniform sampler2D texture;
+    // position: from: [-1, 1] to: [0, 1]
+    vec2 position_to_uv_coor(vec2 position) {
+      return position * vec2(0.5, -0.5) + 0.5;
+    }
     void main() {
       gl_FragColor = vec4(0, 1, 0, 1);
-      gl_FragColor = texture2D(texture, vec2(1.0 - (vposition.x * 0.5 + 0.5), -vposition.y * 0.5 + 0.5));
+      gl_FragColor = texture2D(texture, position_to_uv_coor(vposition));
     }`,
+
   attributes: {
     position: [
       [-1, -1],
