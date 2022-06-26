@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/parse-dds': ^1.0.0
+  '@types/w3c-image-capture': ^1.0.6
   bunny: ^1.0.1
   cash-dom: ^8.1.1
   glslify: ^7.1.1
@@ -13,6 +14,7 @@ specifiers:
 
 dependencies:
   '@types/parse-dds': 1.0.0
+  '@types/w3c-image-capture': 1.0.6
   bunny: 1.0.1
   cash-dom: 8.1.1
   glslify: 7.1.1
@@ -33,6 +35,16 @@ packages:
 
   /@types/parse-dds/1.0.0:
     resolution: {integrity: sha512-ruRfj1ss2kBaOhn5ukhZ/wMU9fUa0aF6fj0uEklEuCpQvwSIJ//SM6d82cRWWweF+hbP52zWx5g+Qa4+yZ5gHQ==}
+    dev: false
+
+  /@types/w3c-image-capture/1.0.6:
+    resolution: {integrity: sha512-YjU0tMPgi7exsy7qU+oh6CtNiUKhWFrcYRj6ogsFYlyjl7aLREgpkyS6ROA6D/2qF5ImmLivj01zocDR+aIlVQ==}
+    dependencies:
+      '@types/webrtc': 0.0.32
+    dev: false
+
+  /@types/webrtc/0.0.32:
+    resolution: {integrity: sha512-+F0Ozq+ksnKtjcMHujSgb4A1Vjt0b4wvvxP3/pTnXKsIrLo34EgHh2z3qJq3ntX4dbK6ytxpY1rzO/4Z8rVrHg==}
     dev: false
 
   /acorn/7.4.1:
