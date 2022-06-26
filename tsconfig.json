@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["es2022", "dom"],
+    "module": "es2022",
+    "moduleResolution": "node",
+    "target": "es2022",
+    "esModuleInterop": true,
+    "strict": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": false
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.mts",
+    "./src/global.d.ts",
+    "./src/**/*.d.ts",
+    "./src/**/*.d.mts"
+  ]
+}
