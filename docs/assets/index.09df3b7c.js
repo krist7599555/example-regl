@@ -1,4 +1,4 @@
-import{R as e,r,b as a}from"./resl-fs.bb2320e2.js";var s="/example-regl/assets/monalisa.0b4f307c.jpg";const o=e(),t=await r({monalisa:{type:"image",src:s,parser(i){return o.texture({mag:"linear",data:i})}}}),n=o({frag:a`
+import{R as e,b as a}from"./regl.efea0522.js";import{r}from"./resl-fs.8073eef2.js";var s="/example-regl/assets/monalisa.0b4f307c.jpg";const o=e(),t=await r({monalisa:{type:"image",src:s,parser(i){return o.texture({mag:"linear",data:i})}}}),n=o({frag:a`
     precision mediump float;
     varying vec2 vposition;
     uniform sampler2D image1;
