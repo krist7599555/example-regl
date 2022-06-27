@@ -3,6 +3,7 @@ const examples = [
   { id: "example-1", import: () => import("./example-1") },
   { id: "example-2", import: () => import("./example-2") },
   { id: "example-3", import: () => import("./example-3") },
+  { id: "example-4", import: () => import("./example-4") },
 ];
 
 const id =
